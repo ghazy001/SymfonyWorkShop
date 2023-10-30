@@ -1,0 +1,80 @@
+/* styles.css */
+h1 {
+    font-size: 36px; /* Adjust the font size as needed */
+    font-family: 'cursive', cursive; /* Use a cursive font style */
+    color: #ff6600; /* Change the text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow */
+    background: linear-gradient(45deg, #ff6600, #ff5500); /* Apply a gradient background */
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline; /* To avoid text wrapping issues */
+    padding: 5px; /* Add padding to separate text from the background */
+}
+
+.ZZZ {
+    text-decoration: none; /* Remove the default underline */
+    background-color: #ff6600; /* Set the background color */
+    color: #fff; /* Set the text color */
+    padding: 10px 20px; /* Add padding to create a clickable area */
+    border-radius: 4px; /* Apply a border radius for rounded corners */
+    display: inline-block; /* Make it a block-level element to adjust width and height */
+    margin-top: 10px; /* Add margin to separate it from other elements */
+    font-weight: bold; /* Make the text bold */
+    text-align: center; /* Center the text within the link */
+}
+
+.ZZZ:hover {
+    background-color: #ff5500; /* Change the background color on hover */
+}
+
+
+
+
+
+/* Center the Form */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    justify-content: center; /* Center the content vertically */
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0; /* Change background color */
+    border-radius: 10px; /* Increase border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Style */
+.btn {
+    background-color: #ff6600; /* Change button background color */
+    color: #fff;
+    padding: 12px 24px; /* Slightly increase padding */
+    border: none;
+    border-radius: 4px; /* Slightly increase border radius */
+    cursor: pointer;
+    margin-left:90px ;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #ff5500; /* Change button hover background color */
+}
+
+/* Adjust the size of all input fields */
+.inputC {
+    width: 100%; /* Set the same width for all input fields */
+    padding: 12px; /* Set the same padding for all input fields */
+    margin: 10px 0;
+    border: 2px solid #ff6600; /* Border properties */
+    border-radius: 4px;
+    font-size: 16px; /* Keep the font size consistent */
+}
+.AAA {
+    width: 93%; /* Set the same width for all input fields */
+    padding: 8px; /* Set the same padding for all input fields */
+    margin: 10px 0;
+    border: 2px solid #ff6600; /* Border properties */
+    border-radius: 4px;
+    font-size: 16px; /* Keep the font size consistent */
+}

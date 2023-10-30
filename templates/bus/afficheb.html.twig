@@ -1,0 +1,39 @@
+{%  extends 'base.html.twig' %}
+
+{% block body %}
+
+    {% block header %}
+
+        {% include 'header.html.twig' %}
+
+    {% endblock %}
+    <body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-image: url('/images/AA.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+        <title>List of Buses</title>
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/styles.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/btn.css') }}">
+
+
+        <h1>List of Buses</h1>
+
+    <table>
+        <thead>
+        <tr>
+            <th>id</th>
+            <th>nombre chaise</th>
+            <th>action</th>
+        </tr>
+        </thead>
+
+        {% for d in data %}
+            <tr>
+                <td>{{ d.numBus }}</td>
+                <td>{{ d.nbrCh }}</td>
+                <td><a href="{{ path('editb',{'id': d.numBus}) }}">edit</a> || <a href="{{ path('deleteb',{'i': d.numBus}) }}">delete</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+        <div class="button-container">
+            <button class="custom-button"><a href="{{ path('addb') }}" style="color: #fff; text-decoration: none;">ADD MORE</a></button>
+        </div>
+    </body>
+{% endblock %}

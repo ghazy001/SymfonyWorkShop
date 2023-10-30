@@ -1,0 +1,42 @@
+{%  extends 'base.html.twig' %}
+
+{% block body %}
+    {% include 'header.html.twig' %}
+
+    <body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-image: url('/images/AA.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+
+
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/styles.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/btn.css') }}">
+    <h1>list des Foies </h1>
+
+
+<table border="1px">
+    <thead>
+    <tr>
+    <th>id</th>
+    <th>nom</th>
+    <th>adresse</th>
+        <th>action</th>
+    </tr>
+    </thead>
+
+    {% for d in data %}
+        <tr>
+    <td>{{ d.id }}</td>
+    <td>{{ d.nom }}</td>
+    <td>{{ d.adresse }}</td>
+    <td><a href="{{ path('edit',{'id': d.id} )  }}">edit</a> || <a href="{{ path('delete',{'i': d.id }) }}">delete</a>
+
+    </td>
+        </tr>
+    {% endfor %}
+
+</table>
+
+    <div class="button-container">
+        <button class="custom-button"><a href="{{ path('add') }}" style="color: #fff; text-decoration: none;">ADD MORE</a></button>
+    </div>
+
+</body>
+{% endblock %}

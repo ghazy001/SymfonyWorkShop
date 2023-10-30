@@ -1,0 +1,43 @@
+h1 {
+    font-size: 36px; /* Increase the font size for impact */
+    color: #3498db; /* Change the text color to a pleasing color */
+    text-align: center;
+    font-family: 'Cursive', cursive; /* Use a custom font for a creative touch */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow for depth */
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+    background-color: white; /* Add this line to set the background to white */
+}
+
+table, th, td {
+    border: 1px solid #333;
+}
+
+thead {
+    background-color: dodgerblue;
+    color: #fff;
+    font-weight: bold;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+
+
+
+h2 {
+    color: white;
+    text-decoration: underline;
+
+}
+
+
+
+

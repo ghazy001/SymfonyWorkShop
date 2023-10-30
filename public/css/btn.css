@@ -1,0 +1,30 @@
+/* Style the button container */
+.button-container {
+    text-align: center;
+    margin: 20px;
+}
+
+/* Style the button */
+.custom-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.2s;
+}
+
+/* Add hover and active effects */
+.custom-button:hover {
+    background: linear-gradient(45deg, #2980b9, #3498db);
+    transform: scale(1.05);
+}
+
+.custom-button:active {
+    transform: scale(0.95);
+}

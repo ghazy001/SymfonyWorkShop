@@ -1,0 +1,37 @@
+
+
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-image: url('/images/AA.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+{% include 'header.html.twig' %}
+
+<h1>list des Chauffeurs</h1>
+<link rel="stylesheet" type="text/css" href="{{ asset('css/styles.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/btn.css') }}">
+
+<table border="1px">
+    <thead>
+    <tr>
+        <th>nom</th>
+        <th>prenom</th>
+        <th>date_naissance</th>
+        <th>action</th>
+        <th>action</th>
+    </tr>
+    </thead>
+    {% for i in data %}
+    <tr>
+        <td>{{ i.id }}</td>
+        <td>{{ i.prenom }}</td>
+        <td>{{ i.date  | date }}</td>
+        <td><a href="{{ path('editc',{'id':i.id}) }}">edit</a></td>
+        <td><a href="{{ path('deletec',{'i':i.id}) }}">delete</a></td>
+
+    </tr>
+    {% endfor %}
+
+
+</table>
+
+<div class="button-container">
+    <button class="custom-button"><a href="{{ path('addc') }}" style="color: #fff; text-decoration: none;">ADD MORE</a></button>
+</div>
+</body>
